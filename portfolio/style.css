@@ -1,0 +1,586 @@
+:root {
+  --gradient: linear-gradient(90deg, #05b8ff, #ff08ff);
+  --primary: #05b8ff;
+  --dark-bg: #0b0b0b;
+  --card-bg: #111;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+   background: #0b1220;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+
+.navbar {
+  box-shadow: rgb(157, 156, 156) 0px 5px 15px;
+
+
+  background: rgba(0, 0, 0, 0.9) !important;
+  backdrop-filter: blur(10px);
+ 
+}
+
+
+.gradient-text {
+
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+
+.nav-link {
+  color: #ffffff !important;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+
+.nav-link::after {
+
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  border-radius: 25px;  color: var(--primary) !important;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
+h1 {
+  font-weight: 700;
+}
+
+h5 {
+  color: #cfcfcf;
+}
+
+p {
+  color: #bdbdbd;
+  line-height: 1.7;
+}
+
+
+.custom-btn  {
+  height: 50px;
+  width: 20px;
+  border-radius: 20px;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  background: transparent;
+  padding: 10px 22px;
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+
+
+  background: var(--gradient);
+  color: #000;
+  border-color: transparent;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(5, 184, 255, 0.4);
+}
+
+
+.profile-pic {
+  transition: all 0.4s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 45px rgba(105, 41, 105, 0.45);
+}
+
+
+#about {
+   background: #0b1220;
+  border-top: 1px solid #222;
+}
+
+#about h1 {
+  font-weight: 700;
+}
+
+#about p {
+
+  color: #c9c9c9;
+}
+
+.about-section {
+  display: flex;
+  gap: 80px;
+  padding: 80px;
+}
+
+
+.profile-card {
+  width: 400px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 50px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0,255,255,0.2);
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  border-radius: 50%;
+  border: 7px solid #00f2ff;
+  overflow: hidden;
+}
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-card h2 {
+  margin-top: 15px;
+}
+
+.role {
+  font-size: 14px;
+  color: #00f2ff;
+  margin: 8px 0 20px;
+}
+
+
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 20px 0;
+}
+
+.stats h3 {
+  color: #00f2ff;
+}
+
+.stats span {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+
+
+.btn{
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  margin-top: 10px;
+  background: #0670cd;
+  color: #0022ff;
+  cursor: pointer;
+}
+
+/* .btn.outline {
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  margin-top: 10px;
+  background: #011861;
+  color: #000;
+  cursor: pointer;
+} */
+
+
+.social {
+  margin-top: 15px;
+}
+
+.social a :hover{
+  margin: 0 8px;
+  color: #00f2ff;
+  text-decoration: none;
+  font-weight: bold;
+ 
+}
+
+.fa-brands:hover{
+transform: scale(2);
+color: #460000;
+
+}
+
+
+
+.about-content h1 {
+  font-size: 48px;
+}
+
+.line {
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #ffffff;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.aboutme-btn{
+  border-radius: 9px;
+  background: var(--gradient-text);
+  color: var(--text-main);
+  height: 40px;
+  width: 90px;
+  box-shadow: 2px 4px 8px #5d75ed;
+}
+
+.about1{
+  color: var(--text-muted);
+}
+
+.cards2{
+  background-color:#101a20 ;
+  color: var(--text-main);
+}
+
+.text-color{
+  color: var(--text-muted);
+}
+
+.title-text{
+  color:#5d75ed;
+}
+
+
+
+#skills {
+   background: #0b1220;
+  border-top: 1px solid #222;
+  padding: 80px 0;
+}
+
+#skills .section-title h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#skills .curly-waves {
+  margin-top: 10px;
+}
+
+
+.skill-card {
+  background: #ffffff;
+  padding: 35px 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.4s ease;
+  height: 100%;
+}
+
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+.skill-card h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #4b2aad;
+}
+
+
+.skill-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.skill-card ul li {
+  font-size: 16px;
+  padding: 8px 0;
+  color: #444;
+  border-bottom: 1px solid #eee;
+}
+
+
+
+.project-section {
+   background: #0b1220;
+}
+
+
+.gradient-text {
+  font-size: 42px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00f2ff, #0dcaf0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.nav-pills .nav-link {
+  border-radius: 30px;
+  padding: 8px 22px;
+  margin: 0 6px;
+  color: #fff;
+}
+
+.nav-pills .nav-link.active {
+  background: linear-gradient(90deg, #00f2ff, #0dcaf0);
+  color: #000;
+}
+
+
+
+
+
+.card-container {
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 30px; 
+  max-width: 700px;
+  margin: 50px auto;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+  transition: 0.4s;
+}
+
+.card img {
+
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  
+  padding: 15px;
+  text-align: center;
+}
+
+.card-body h5 {
+  color: rgb(77, 77, 142);    
+  margin-bottom: 10px;
+}
+
+.card-body p {
+  
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 15px;
+}
+
+.btn {
+  padding: 8px 18px;
+  background: rgb(77, 77, 142);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+}
+
+.btn:hover {
+  background: rgb(67, 92, 255);
+}
+
+
+.services {
+    background: #0b1220;
+ 
+}
+
+.service-card {
+ background: var(--bg-main);
+  border-radius: 15px;
+  padding: 30px;
+  height: 100%;
+  box-shadow: 0 0 25px rgba(0,255,255,0.08);
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 35px rgba(0,255,255,0.2);
+}
+
+.service-img {
+  width: 370px;
+  height: 200px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.service-card h4 {
+  color: #00f5ff;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.btn-custom {
+  background: linear-gradient(90deg, #1f3233, #52287a);
+  color: white;
+  border-radius: 30px;
+  padding: 8px 18px;
+  font-size: 14px;
+}
+
+.btn-custom:hover {
+  color: white;
+  opacity: 0.9;
+}
+
+
+
+.testimonials-section {
+  background: #0b1220;
+  
+}
+
+.testimonial-card {
+  background: #111827;
+  color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-15px);
+  color: rgb(255, 255, 255);
+  background-color: rgb(26, 26, 56);
+}
+
+.testimonial-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin-bottom: 25px;
+  border: 3px solid #ffffff;
+}
+
+
+
+
+.contact-section {
+  background: #0b1220;
+  padding: 60px 0;
+}
+
+
+.info-card,
+.form-box {
+  
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  transition: 0.25s;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+}
+
+.info-card:hover,
+.form-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  background: #2563eb; 
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.form-box{
+  height: 500px;
+  width: 700px;
+}
+.form-control:hover{
+  /* transform: translateY(-10px); */
+  box-shadow: 0 0 35px rgb(0, 8, 71);
+
+}
+
+
+.map-card iframe {
+  height: 500px;
+  width: 500px;
+  border-radius:12px;
+  transition: 0.25s;
+}
+
+.map-card iframe:hover {
+  transform: scale(1.008);
+}
+
+
+.form-control {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #dcdcdc;
+}
+
+.form-control:focus {
+  border-color: #2563eb;
+  box-shadow: none;
+}
+
+
+.submit-btn {
+  background: #2563eb;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 15px;
+  transition: 0.25s;
+}
+
+.submit-btn:hover {
+  background: #1e40af;
+}
